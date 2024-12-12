@@ -1,41 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donate Bangladesh</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.19/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-
-</head>
-<body>
-  <!-- Navbar section -->
-   <section class="bg-[#F9F7F3] pt-4 pb-8">
-   <div class="container  mx-auto">
-    <div class="navbar ">
-        <div class="navbar-start">
-          
-          <a class="btn btn-ghost w-auto h-auto font-semibold py-3 px-6 bg-[#B4F461] text-xl">Blog</a>
-        </div>
-        <div class="navbar-center hidden lg:flex">
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.19/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+     <!-- font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+     <style>
+        .lexend-font {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+     </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'btn-clr': "#B4F461",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="lexend-font ">
+    <!-- Navbar section -->
+    <section class="bg-[#F9F7F3] pt-4 pb-8">
+      <div class="container mx-auto">
+        <div class="navbar">
+          <div class="navbar-start">
+            <a
+              class="btn btn-ghost w-auto h-auto font-semibold py-3 px-6 bg-[#B4F461] text-xl"
+              >Blog</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
             <div class="flex justify-center items-center gap-4">
-                <img src="./assets/logo.png" alt="">
-                <h1 class="font-semibold text-xl">Donate Bangladesh</h1>
+              <img src="./assets/logo.png" alt="" />
+              <h1 class="font-semibold text-xl">Donate Bangladesh</h1>
             </div>
-        </div>
-        <div class="navbar-end">
+          </div>
+          <div class="navbar-end">
             <div class="flex justify-center items-center gap-2">
-                <img class="w-5 h-5 " src="./assets//coin.png" alt="">
-                <h1 class="font-semibold text-[#111111B3] text-xl"><span>5500</span>BDT</h1>
+              <img class="w-5 h-5" src="./assets//coin.png" alt="" />
+              <h1 class="font-semibold text-[#111111B3] text-xl">
+                <span>5500</span>BDT
+              </h1>
             </div>
+          </div>
         </div>
       </div>
-   </div>
-   </section>
-   <!-- Main section -->
-   <section>
-
-   </section>
-    
-</body>
+    </section>
+    <!-- Main section -->
+    <section>
+      <div class="container mx-auto">
+        <div class="flex justify-center items-center w-full gap-4 pt-20">
+          <button class="btn bg-btn-clr  border-none text-black font-semibold w-40 h-14  btn-secondary">Donation</button>
+          <button class="btn  btn-outline w-32 h-14 border-[#1111114D] text-[#1111114D] font-semibold ">History</button>
+          
+        </div>
+        <div class="">
+            <!-- card 1 -->
+              <div class="card lg:card-side bg-base-100 mt-8 border-[#1111111A] border-2 shadow-xl">
+                <figure class="lg:w-1/2 lg:h-[440px] lg:p-8">
+                  <img class="lg:h-full w-full rounded-xl"
+                    src="./assets/feni.png"
+                    alt="Album" />
+                </figure>
+                <div class="card-body lg:w-1/2 items-start text-start">
+                  <button class="btn bg-none text-xl font-medium text-[#111111B3]"><img src="./assets/coin.png" alt=""> <span>0</span>BDT</button>
+                  <h2 class="card-title text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
+                  <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                  <input type="text" placeholder="Type here" class="input input-bordered w-full " />
+                  <button class="btn  w-full">Buy Now</button>
+                  
+                </div>
+              </div>
+            <!-- card 2 -->
+              <div class="card lg:card-side bg-base-100 mt-8 border-[#1111111A] border-2 shadow-xl">
+                <figure class="lg:w-1/2 lg:h-[440px] lg:p-8">
+                  <img class="lg:h-full w-full rounded-xl"
+                    src="./assets/noakhali.png"
+                    alt="Album" />
+                </figure>
+                <div class="card-body lg:w-1/2 items-start text-start">
+                  <button class="btn bg-none text-xl font-medium text-[#111111B3]"><img src="./assets/coin.png" alt=""> <span>0</span>BDT</button>
+                  <h2 class="card-title text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
+                  <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                  <input type="text" placeholder="Type here" class="input input-bordered w-full " />
+                  <button class="btn  w-full">Buy Now</button>
+                  
+                </div>
+              </div>
+            <!-- card 3 -->
+              <div class="card lg:card-side bg-base-100 mt-8 border-[#1111111A] border-2 shadow-xl">
+                <figure class="lg:w-1/2 lg:h-[440px] lg:p-8">
+                  <img class="lg:h-full w-full rounded-xl"
+                    src="./assets/quota-protest.png"
+                    alt="Album" />
+                </figure>
+                <div class="card-body lg:w-1/2 items-start text-start">
+                  <button class="btn bg-none text-xl font-medium text-[#111111B3]"><img src="./assets/coin.png" alt=""> <span>0</span>BDT</button>
+                  <h2 class="card-title text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
+                  <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                  <input type="text" placeholder="Type here" class="input input-bordered w-full " />
+                  <button class="btn  w-full">Buy Now</button>
+                  
+                </div>
+              </div>
+            
+        </div>
+      </div>
+      
+    </section>
+  </body>
 </html>
